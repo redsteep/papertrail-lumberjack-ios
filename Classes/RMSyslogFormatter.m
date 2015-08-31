@@ -11,7 +11,10 @@
 
 static NSString * const RMAppUUIDKey = @"RMAppUUIDKey";
 
-@implementation RMSyslogFormatter
+@implementation RMSyslogFormatter {
+    NSDateFormatter *dateFormatter;
+    dispatch_once_t onceToken;
+}
 
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage
 {
@@ -31,9 +34,13 @@ static NSString * const RMAppUUIDKey = @"RMAppUUIDKey";
     //Also display the file the logging occurred in to ease later debugging
     NSString *file = [[logMessage.file lastPathComponent] stringByDeletingPathExtension];
     
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MMM dd HH:mm:ss"];
-    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    dispatch_once(&onceToken, ^{
+        dateFormatter = [NSDateFormatter new];
+        dateFormatter.dateFormat = @"MMM dd HH:mm:ss";
+        dateFormatter.timeZone = [NSTimeZone systemTimeZone];
+        dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
+    });
+    
     NSString *timestamp = [dateFormatter stringFromDate:logMessage.timestamp];
     
     //Get vendor id
@@ -49,15 +56,39 @@ static NSString * const RMAppUUIDKey = @"RMAppUUIDKey";
 
 -(NSString *) machineName
 {
-    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleExecutableKey];
-    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleVersionKey];
-
-    return [@[appName, appVersion] componentsJoinedByString:@"-"];
+    NSCharacterSet *charactersToRemove = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
+    return [[[UIDevice currentDevice].name componentsSeparatedByCharactersInSet:charactersToRemove] componentsJoinedByString:@"-"];
 }
+
+//-(NSString *) machineName
+//{
+//    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleExecutableKey];
+//    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleVersionKey];
+//
+//    return [@[appName, appVersion] componentsJoinedByString:@"-"];
+//}
 
 -(NSString *) programName
 {
-    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    NSString *programName = [[[NSBundle mainBundle] localizedInfoDictionary] objectForKey:@"CFBundleDisplayName"];
+    if (programName == nil) {
+        programName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
+    }
+    
+    //Remove all whitespace characters from appname
+    if (programName != nil) {
+        NSArray *components = [programName componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        programName = [components componentsJoinedByString:@"-"];
+    }
+    
+    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleVersionKey];
+    
+    return [NSString stringWithFormat:@"%@-%@", programName, appVersion];
 }
+
+//-(NSString *) programName
+//{
+//    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+//}
 
 @end
