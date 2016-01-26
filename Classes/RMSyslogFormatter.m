@@ -38,7 +38,7 @@ static NSString * const RMAppUUIDKey = @"RMAppUUIDKey";
         dateFormatter = [NSDateFormatter new];
         dateFormatter.dateFormat = @"MMM dd HH:mm:ss";
         dateFormatter.timeZone = [NSTimeZone systemTimeZone];
-        dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
+        dateFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
     });
     
     NSString *timestamp = [dateFormatter stringFromDate:logMessage.timestamp];
