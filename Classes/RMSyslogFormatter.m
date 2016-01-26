@@ -56,17 +56,13 @@ static NSString * const RMAppUUIDKey = @"RMAppUUIDKey";
 
 -(NSString *) machineName
 {
+#if TARGET_OS_IPHONE
     NSCharacterSet *charactersToRemove = [[NSCharacterSet alphanumericCharacterSet] invertedSet];
     return [[[UIDevice currentDevice].name componentsSeparatedByCharactersInSet:charactersToRemove] componentsJoinedByString:@"-"];
+#else
+    return [[NSHost currentHost] localizedName];
+#endif
 }
-
-//-(NSString *) machineName
-//{
-//    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleExecutableKey];
-//    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(__bridge NSString *)kCFBundleVersionKey];
-//
-//    return [@[appName, appVersion] componentsJoinedByString:@"-"];
-//}
 
 -(NSString *) programName
 {
@@ -85,10 +81,5 @@ static NSString * const RMAppUUIDKey = @"RMAppUUIDKey";
     
     return [NSString stringWithFormat:@"%@-%@", programName, appVersion];
 }
-
-//-(NSString *) programName
-//{
-//    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-//}
 
 @end

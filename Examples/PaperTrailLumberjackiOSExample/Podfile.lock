@@ -8,7 +8,7 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.2.0):
     - CocoaLumberjack/Default
-  - PaperTrailLumberjack (1.0.2):
+  - PaperTrailLumberjack (1.0.3):
     - CocoaAsyncSocket
     - CocoaLumberjack (~> 2.2.0)
 
@@ -17,11 +17,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   PaperTrailLumberjack:
-    :path: ../..
+    :path: "../.."
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
-  PaperTrailLumberjack: 43b20b5a158f261d1e3b604013d8a7624a24a5ad
+  PaperTrailLumberjack: a06d79e0599eb86a3f679cb0138fc2f81a5a3c8c
 
 COCOAPODS: 0.39.0

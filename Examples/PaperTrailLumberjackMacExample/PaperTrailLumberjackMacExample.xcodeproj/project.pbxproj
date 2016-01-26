@@ -52,7 +52,8 @@
 		25E14FD7191B89A700A6F738 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25E14FD9191B89A700A6F738 /* PaperTrailLumberjackMacExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperTrailLumberjackMacExampleTests.m; sourceTree = "<group>"; };
 		2A856F6DDCAF4228939C9415 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7552A10DD77049D285ABB87A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		64E238872B80B73FD306AFF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BFF3EF39A5F817EBDAF75D04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +85,7 @@
 				25E14FD3191B89A700A6F738 /* PaperTrailLumberjackMacExampleTests */,
 				25E14FAE191B89A500A6F738 /* Frameworks */,
 				25E14FAD191B89A500A6F738 /* Products */,
-				7552A10DD77049D285ABB87A /* Pods.xcconfig */,
+				3A018FD482D591D77F66509B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +161,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3A018FD482D591D77F66509B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64E238872B80B73FD306AFF0 /* Pods.debug.xcconfig */,
+				BFF3EF39A5F817EBDAF75D04 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +182,7 @@
 				25E14FA9191B89A500A6F738 /* Frameworks */,
 				25E14FAA191B89A500A6F738 /* Resources */,
 				99229059FD5C4A7EAA418A9B /* Copy Pods Resources */,
+				3534013A9492AA8411E456D1 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +268,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3534013A9492AA8411E456D1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6FDB45AD58A244E28678D78F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,7 +310,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -425,7 +451,7 @@
 		};
 		25E14FDE191B89A700A6F738 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7552A10DD77049D285ABB87A /* Pods.xcconfig */;
+			baseConfigurationReference = 64E238872B80B73FD306AFF0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -440,7 +466,7 @@
 		};
 		25E14FDF191B89A700A6F738 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7552A10DD77049D285ABB87A /* Pods.xcconfig */;
+			baseConfigurationReference = BFF3EF39A5F817EBDAF75D04 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;

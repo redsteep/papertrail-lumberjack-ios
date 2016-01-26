@@ -10,7 +10,7 @@
 
 #import <RMPaperTrailLogger.h>
 
-const int ddLogLevel = LOG_LEVEL_VERBOSE;
+const int ddLogLevel = DDLogLevelVerbose;
 
 @implementation RMAppDelegate
 
