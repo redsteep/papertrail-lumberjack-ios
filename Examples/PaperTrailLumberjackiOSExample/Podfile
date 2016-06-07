@@ -1,3 +1,9 @@
 platform :ios, '7.0'
 
-pod "PaperTrailLumberjack", :path => "../.."
+target 'PaperTrailLumberjackiOSExample' do
+	pod "PaperTrailLumberjack", :path => "../.."
+end
+
+target 'PaperTrailLumberjackiOSExampleTests' do
+	pod "PaperTrailLumberjack", :path => "../.."
+end

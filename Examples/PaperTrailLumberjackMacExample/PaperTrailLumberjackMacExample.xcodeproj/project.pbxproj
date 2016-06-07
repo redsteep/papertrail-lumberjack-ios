@@ -18,7 +18,8 @@
 		25E14FD0191B89A700A6F738 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E14FAF191B89A500A6F738 /* Cocoa.framework */; };
 		25E14FD8191B89A700A6F738 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25E14FD6191B89A700A6F738 /* InfoPlist.strings */; };
 		25E14FDA191B89A700A6F738 /* PaperTrailLumberjackMacExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E14FD9191B89A700A6F738 /* PaperTrailLumberjackMacExampleTests.m */; };
-		2EFB25BB61B84A6DB08AB924 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A856F6DDCAF4228939C9415 /* libPods.a */; };
+		63310AE44FFBFB8DBEC13477 /* libPods-PaperTrailLumberjackMacExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3E7EE54183D2270A36506D /* libPods-PaperTrailLumberjackMacExampleTests.a */; };
+		FB2E34D5260D37AF13272836 /* libPods-PaperTrailLumberjackMacExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF01EFD55B6888BEF65A6A20 /* libPods-PaperTrailLumberjackMacExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1C4567E43DC1860A22FD72 /* Pods-PaperTrailLumberjackMacExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperTrailLumberjackMacExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaperTrailLumberjackMacExampleTests/Pods-PaperTrailLumberjackMacExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		25E14FAC191B89A500A6F738 /* PaperTrailLumberjackMacExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperTrailLumberjackMacExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E14FAF191B89A500A6F738 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		25E14FB2191B89A500A6F738 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -51,9 +53,11 @@
 		25E14FD5191B89A700A6F738 /* PaperTrailLumberjackMacExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaperTrailLumberjackMacExampleTests-Info.plist"; sourceTree = "<group>"; };
 		25E14FD7191B89A700A6F738 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25E14FD9191B89A700A6F738 /* PaperTrailLumberjackMacExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperTrailLumberjackMacExampleTests.m; sourceTree = "<group>"; };
-		2A856F6DDCAF4228939C9415 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E238872B80B73FD306AFF0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		BFF3EF39A5F817EBDAF75D04 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		3B3E7EE54183D2270A36506D /* libPods-PaperTrailLumberjackMacExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PaperTrailLumberjackMacExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA5366828B2CC9B961FDDFE /* Pods-PaperTrailLumberjackMacExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperTrailLumberjackMacExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaperTrailLumberjackMacExample/Pods-PaperTrailLumberjackMacExample.release.xcconfig"; sourceTree = "<group>"; };
+		A8D81F4D2259B2E5FB3E48A2 /* Pods-PaperTrailLumberjackMacExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperTrailLumberjackMacExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PaperTrailLumberjackMacExample/Pods-PaperTrailLumberjackMacExample.debug.xcconfig"; sourceTree = "<group>"; };
+		CF01EFD55B6888BEF65A6A20 /* libPods-PaperTrailLumberjackMacExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PaperTrailLumberjackMacExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22D9785971E9192ACC1DDA5 /* Pods-PaperTrailLumberjackMacExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaperTrailLumberjackMacExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PaperTrailLumberjackMacExampleTests/Pods-PaperTrailLumberjackMacExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25E14FB0191B89A500A6F738 /* Cocoa.framework in Frameworks */,
-				2EFB25BB61B84A6DB08AB924 /* libPods.a in Frameworks */,
+				FB2E34D5260D37AF13272836 /* libPods-PaperTrailLumberjackMacExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +76,7 @@
 			files = (
 				25E14FD0191B89A700A6F738 /* Cocoa.framework in Frameworks */,
 				25E14FCF191B89A700A6F738 /* XCTest.framework in Frameworks */,
+				63310AE44FFBFB8DBEC13477 /* libPods-PaperTrailLumberjackMacExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +90,7 @@
 				25E14FD3191B89A700A6F738 /* PaperTrailLumberjackMacExampleTests */,
 				25E14FAE191B89A500A6F738 /* Frameworks */,
 				25E14FAD191B89A500A6F738 /* Products */,
-				3A018FD482D591D77F66509B /* Pods */,
+				A1678E90787F2C5B42DEF7F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,7 +109,8 @@
 				25E14FAF191B89A500A6F738 /* Cocoa.framework */,
 				25E14FCE191B89A700A6F738 /* XCTest.framework */,
 				25E14FB1191B89A500A6F738 /* Other Frameworks */,
-				2A856F6DDCAF4228939C9415 /* libPods.a */,
+				CF01EFD55B6888BEF65A6A20 /* libPods-PaperTrailLumberjackMacExample.a */,
+				3B3E7EE54183D2270A36506D /* libPods-PaperTrailLumberjackMacExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,11 +167,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3A018FD482D591D77F66509B /* Pods */ = {
+		A1678E90787F2C5B42DEF7F8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				64E238872B80B73FD306AFF0 /* Pods.debug.xcconfig */,
-				BFF3EF39A5F817EBDAF75D04 /* Pods.release.xcconfig */,
+				A8D81F4D2259B2E5FB3E48A2 /* Pods-PaperTrailLumberjackMacExample.debug.xcconfig */,
+				7DA5366828B2CC9B961FDDFE /* Pods-PaperTrailLumberjackMacExample.release.xcconfig */,
+				1C1C4567E43DC1860A22FD72 /* Pods-PaperTrailLumberjackMacExampleTests.debug.xcconfig */,
+				F22D9785971E9192ACC1DDA5 /* Pods-PaperTrailLumberjackMacExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -177,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25E14FDD191B89A700A6F738 /* Build configuration list for PBXNativeTarget "PaperTrailLumberjackMacExample" */;
 			buildPhases = (
-				6FDB45AD58A244E28678D78F /* Check Pods Manifest.lock */,
+				6939F408DF07F3DEDB1758A0 /* [CP] Check Pods Manifest.lock */,
 				25E14FA8191B89A500A6F738 /* Sources */,
 				25E14FA9191B89A500A6F738 /* Frameworks */,
 				25E14FAA191B89A500A6F738 /* Resources */,
-				99229059FD5C4A7EAA418A9B /* Copy Pods Resources */,
-				3534013A9492AA8411E456D1 /* Embed Pods Frameworks */,
+				F6126AD1535410BDFD3E7B2C /* [CP] Embed Pods Frameworks */,
+				1E886942AE3872B7D5336F0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25E14FE0191B89A700A6F738 /* Build configuration list for PBXNativeTarget "PaperTrailLumberjackMacExampleTests" */;
 			buildPhases = (
+				240F33E9E540795ABA110AB9 /* [CP] Check Pods Manifest.lock */,
 				25E14FC9191B89A700A6F738 /* Sources */,
 				25E14FCA191B89A700A6F738 /* Frameworks */,
 				25E14FCB191B89A700A6F738 /* Resources */,
+				82E5196F558933059EC5DB66 /* [CP] Embed Pods Frameworks */,
+				2CC6A077B3C6B8A78D7D6A41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,29 +279,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3534013A9492AA8411E456D1 /* Embed Pods Frameworks */ = {
+		1E886942AE3872B7D5336F0E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperTrailLumberjackMacExample/Pods-PaperTrailLumberjackMacExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6FDB45AD58A244E28678D78F /* Check Pods Manifest.lock */ = {
+		240F33E9E540795ABA110AB9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,19 +309,64 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		99229059FD5C4A7EAA418A9B /* Copy Pods Resources */ = {
+		2CC6A077B3C6B8A78D7D6A41 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperTrailLumberjackMacExampleTests/Pods-PaperTrailLumberjackMacExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6939F408DF07F3DEDB1758A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82E5196F558933059EC5DB66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperTrailLumberjackMacExampleTests/Pods-PaperTrailLumberjackMacExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6126AD1535410BDFD3E7B2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PaperTrailLumberjackMacExample/Pods-PaperTrailLumberjackMacExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -451,7 +507,7 @@
 		};
 		25E14FDE191B89A700A6F738 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64E238872B80B73FD306AFF0 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = A8D81F4D2259B2E5FB3E48A2 /* Pods-PaperTrailLumberjackMacExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -466,7 +522,7 @@
 		};
 		25E14FDF191B89A700A6F738 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFF3EF39A5F817EBDAF75D04 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 7DA5366828B2CC9B961FDDFE /* Pods-PaperTrailLumberjackMacExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -481,6 +537,7 @@
 		};
 		25E14FE1191B89A700A6F738 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C1C4567E43DC1860A22FD72 /* Pods-PaperTrailLumberjackMacExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PaperTrailLumberjackMacExample.app/Contents/MacOS/PaperTrailLumberjackMacExample";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -503,6 +560,7 @@
 		};
 		25E14FE2191B89A700A6F738 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F22D9785971E9192ACC1DDA5 /* Pods-PaperTrailLumberjackMacExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PaperTrailLumberjackMacExample.app/Contents/MacOS/PaperTrailLumberjackMacExample";
 				COMBINE_HIDPI_IMAGES = YES;
